@@ -1,15 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #cfbad3;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 80px;
+            height: 500px;
+            right: 10px;
+            left: 10px;
+            position: absolute;
+            top: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .card {
+            border: solid 1px black;
+            margin: 10px;
+            margin-right: 10px;
+            height: 480px;
+            width: 400px;
+            border-radius: 80px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .text {
+            margin: 10px;
+            margin-left: 10px;
+            flex: 1;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icon {
+            background-color: navy;
+            height: 90px;
+            width: 130px;
+            margin-top: 20px;
+        }
+
+        .QR {
+            background-color: black;
+            height: 180px;
+            width: 180px;
+            margin-top: 20px;
+        }
+
+        .아이콘 {
+            margin-top: 15px;
+        }
+
+        .이름 {
+            margin-top: 15px;
+            color: gray;
+        }
+
+        .color {
+            margin-top: 30px;
+            background-color: blue;
+            height: 70px;
+            width: 400px;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .와이파이 {
+            color: white;
+        }
+
+        .circle {
+            background-color: gray;
+            height: 60px;
+            width: 100px;
+        }
+
+        .wifi {
+            margin-top: 30px;
+            height: 40px;
+            width: 130px;
+            color: black;
+        }
+
+        .name {
+            margin-top: 30px;
+            height: 40px;
+            width: 130px;
+            color: black;
+        }
+
+        .connect {
+            margin-top: 60px;
+
+            height: 60px;
+            width: 130px;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>나도 클래식을 좋아해</h1>
+    <div class="box">
+        <div class="text">
+            <div class="circle"></div>
+            <div class="wifi">
+                <h1>wifi</h1>
+            </div>
+            <div class="name">001lounge_5G</div>
+            <div class="connect">
+                <h1>Connected</h1>
+            </div>
+            <div class="7">7</div>
+        </div>
+        <div class="card">
+            <div class="icon"></div>
+            <div class="아이콘">Free Wifi</div>
+            <div class="QR"></div>
+            <div class="이름">001lounge_5G</div>
+            <div class="color">
+                <div class="와이파이">
+                    <h1>wifi</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
