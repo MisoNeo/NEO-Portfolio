@@ -210,5 +210,9 @@ p{
 .about
 {
     background: rgb(93, 130, 179);
-
+}
+.about .content{
+    display: flex;
+    justify-content: space-between;
+    
 }
