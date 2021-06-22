@@ -284,7 +284,7 @@ p{
 .work .content .workBx{
     position: relative;
     width: 265px;
-    height: 256px;
+    height: 265px;
     margin: 10px;
     transition: 0.5s;
     text-align: center;
@@ -309,7 +309,16 @@ p{
     object-fit: cover;
 }
 .work .content .workBx .textBx{
-    background:#000;
-    opacity: 1;
+    background:rgb(158, 175, 221);
+    opacity: 0;
     transition:0.5s;
+}
+.work .content .workBx:hover .textBx{
+    opacity: 1;
+}
+.work .content .workBx .textBx h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
 }
