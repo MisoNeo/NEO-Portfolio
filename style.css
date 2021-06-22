@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 .toggle
 {
@@ -178,7 +179,7 @@ p{
 }
 .title h2{
     position: relative;
-    color: #60a5ff;
+    color: #86b7f7;
     font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -209,10 +210,27 @@ p{
 }
 .about
 {
-    background: rgb(93, 130, 179);
+    background: rgb(53, 91, 139);
 }
+
 .about .content{
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 40px;
+}
+.about .content .textBx
+{
+    min-width: 49%;
+    width: 49%;
+}
+.about .content .textBx p{
+    color: #fff
+}
+
+.about .content .imgBx{
+    margin-left: 40px;
+}
+
+.about .content .imgBx img{
+    max-width: 100%;
 }
