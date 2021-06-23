@@ -189,6 +189,8 @@ p{
 .title p 
 {
     max-width: 700px;
+    font-size: 20px;
+    font-weight: 350;
     display: inline-block;
 }
 .title h2::before{
@@ -324,4 +326,7 @@ p{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1em;
+}
+.p{
+    font-size: 20px;
 }
