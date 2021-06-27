@@ -12,7 +12,7 @@
 <body>
     <div class="navigation">
         <div class="banner">
-            <img src="./menu.png" class="cover">
+            <img src="./img4.jpg" class="cover">
         </div>
         <div class="navLink">
             <ul>
@@ -28,9 +28,43 @@
     <section class="sec">
         <header>
             <div class="toggle"></div>
-            <a href="#" class="btn">I'M U</a>
+            <a href="#" class="btn">TO FIND U</a>
         </header>
+
+        <div class="imgBx">
+            <img src="./bg1.jpg" class="cover">
+        </div>
+        <div class="content">
+            <h2> WELCOME I'm<br><span>YOO HAE WON</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi possimus voluptates quos aspernatur deleniti saepe reiciendis fuga, ut eius sit non animi nulla fugiat laborum exercitationem dolorum amet totam.</p>
+            <a href="#" class="btn">Watch My Portfolio</a>
+        </div>
+        <footer>
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="facebook.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="twitter.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="instagram.png"></a>
+                </li>
+            </ul>
+            <p class="copyrightText">2021 2M NEOPORTFOLIO</p>
+        </footer>
     </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            sec.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
