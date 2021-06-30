@@ -33,8 +33,6 @@ p {
     font-weight: 300;
 }
 
-.sec {}
-
 .toggle {
     position: relative;
     left: 0;
@@ -97,6 +95,11 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+}
+
+.sec {
+    display: flex;
+    flex-direction: row;
 }
 
 .sec .content_ {
