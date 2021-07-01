@@ -20,6 +20,7 @@ body {
     padding: 0;
     font-size: 14px;
     color: #000;
+    background: rgb(250, 246, 237);
 }
 
 section {
@@ -46,7 +47,7 @@ p {
 }
 
 .toggle::before {
-    content: '.';
+    content: '';
     position: absolute;
     width: 30px;
     height: 3px;
@@ -56,7 +57,7 @@ p {
 }
 
 .toggle::after {
-    content: '.';
+    content: '';
     position: absolute;
     width: 30px;
     height: 3px;
@@ -98,16 +99,20 @@ header {
 }
 
 .sec {
+    position: relative;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
 }
 
 .sec .content_ {
-    margin-bottom: 100px;
-    margin-left: 0;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+    max-width: 700px;
+    margin-left: 40px;
 }
 
 .sec .content_ h2 {
@@ -126,6 +131,7 @@ header {
 .sec .content_ p {
     color: #777;
     font-size: 1.2em;
+    font-weight: normal;
     margin-bottom: 20px;
 }
 
@@ -135,31 +141,50 @@ header {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 100px;
+    opacity: 0.75;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    position: relative;
+    margin-right: 20px;
+    display: inline-block;
+    transform: scale(0.75);
     opacity: 0.75;
 }
 
-.sci li a :hover {
+.sci li :hover {
     opacity: 1;
 }
 
 .copyrightText {
     font-weight: 500;
     color: #777;
-    height: 300px;
-    margin-top: 100px;
+    letter-spacing: 1px;
 }
 
 .sec .imgBx_ {
     position: relative;
-    width: 500px;
+    min-width: 500px;
     height: 500px;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.banner {
-    font-size: 1.5em;
-    margin-left: 50px;
 }
 
 .title {
@@ -209,7 +234,7 @@ footer {
 .about .content {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .about .content .textBx {
@@ -219,7 +244,7 @@ footer {
 
 .about .content .textBx p {
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
 }
 
@@ -236,6 +261,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 5vh;
 }
 
 .services .content .servicesBx {
@@ -244,11 +270,11 @@ footer {
     margin: 20px;
     transition: 0.5s;
     text-align: center;
-    background: #f5f5f5;
+    background: #ccdcf1;
 }
 
 .services .content .servicesBx:hover {
-    background: #6495d6;
+    background: #8cafdd;
 }
 
 .services .content .servicesBx img {
@@ -286,6 +312,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 8vh;
     margin-bottom: 30vh;
 }
 
@@ -320,7 +347,7 @@ footer {
 }
 
 .work .content .workBx .textBx {
-    background: rgb(158, 175, 221);
+    background: rgb(175, 186, 223);
     opacity: 0;
     transition: 0.5s;
 }
