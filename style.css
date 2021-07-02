@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto+Sans+SC', sans-serif;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
@@ -36,7 +35,7 @@ p {
 
 .toggle {
     position: relative;
-    left: 0;
+    right: 0;
     width: 40px;
     height: 40px;
     display: flex;
@@ -469,5 +468,21 @@ footer {
         margin-left: 0;
         min-width: 100%;
     }
-    footer {}
+    .sec .content_ .btn {
+        margin-right: 13px;
+        ;
+    }
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 17px;
+    }
+    .sec .content_ h2 span {
+        font-size: 2em;
+    }
+    .sec .imgBx_ .cover {
+        width: 300px;
+        min-width: 300px;
+        height: 300px;
+    }
 }
