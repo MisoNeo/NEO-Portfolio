@@ -33,6 +33,27 @@ p {
     font-weight: 300;
 }
 
+.sidebar {
+    position: fixed;
+    background-color: rgb(52, 60, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 56%;
+    height: 100%;
+    padding: 40px;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.sidbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .toggle {
     position: relative;
     right: 0;
@@ -244,7 +265,7 @@ footer {
 .about .content .textBx p {
     color: #fff;
     font-size: 17px;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .about .content .imgBx {
@@ -254,6 +275,10 @@ footer {
 
 .about .content .imgBx img {
     max-width: 100%;
+}
+
+.services .title {
+    margin-top: 80px;
 }
 
 .services .content {
