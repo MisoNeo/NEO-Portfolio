@@ -355,7 +355,7 @@ footer {
     color: #fff;
 }
 
-.work_ .content {
+.work .content {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -364,7 +364,7 @@ footer {
     margin-bottom: 30vh;
 }
 
-.work_ .content .workBx {
+.work .content .workBx {
     position: relative;
     width: 265px;
     height: 265px;
@@ -373,8 +373,8 @@ footer {
     text-align: center;
 }
 
-.work_ .content .workBx .imgBx,
-.work_ .content .workBx .textBx {
+.work .content .workBx .imgBx,
+.work .content .workBx .textBx {
     position: absolute;
     top: 0;
     left: 0;
@@ -385,7 +385,7 @@ footer {
     align-items: center;
 }
 
-.work_ .content .workBx .imgBx img {
+.work .content .workBx .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -394,16 +394,16 @@ footer {
     object-fit: cover;
 }
 
-.work_ .content .workBx .textBx {
+.work .content .workBx .textBx {
     opacity: 0;
     transition: 0.5s;
 }
 
-.work_ .content .workBx .work:hover .textBx {
-    opacity: 1;
+.work .content .workBx .work:hover .textBx {
+    opacity: 1 !important;
 }
 
-.work_ .content .workBx .textBx h3 {
+.work .content .workBx .textBx h3 {
     color: #37475c;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -624,15 +624,8 @@ footer {
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
 }
 
-.modal-btn:not(:checked):hover ::before {
-    content: "";
-    opacity: 0.7;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: rgb(243, 243, 243);
+.modal-btn:not(:checked)+label:hover {
+    opacity: 0.6;
 }
 
 .modal-btn:checked+label .uil,
