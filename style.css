@@ -395,19 +395,19 @@ footer {
 }
 
 .work .content .workBx .textBx {
-    background: rgb(175, 186, 223);
     opacity: 0;
     transition: 0.5s;
 }
 
-.work .content .workBx:hover .textBx {
-    opacity: 1;
+.work .content .workBx .work:hover .textBx {
+    opacity: 1 !important;
 }
 
 .work .content .workBx .textBx h3 {
-    color: #fff;
+    color: #37475c;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 400;
     font-size: 1em;
 }
 
@@ -551,7 +551,7 @@ footer {
     color: #1f2029;
     /* background-color: #fff; */
     overflow: hidden;
-    background-image: url('https://assets.codepen.io/1462889/back-page.svg');
+    /* background-image: url('https://assets.codepen.io/1462889/back-page.svg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 101%;
@@ -617,7 +617,7 @@ footer {
     align-self: center;
     border: none;
     cursor: pointer;
-    background-image: url(./slider1.jpg);
+    background-image: url(./img1.jpg);
     background-size: 100%;
     /* background-color: #102770;
     color: #ffeba7; */
@@ -625,8 +625,7 @@ footer {
 }
 
 .modal-btn:not(:checked)+label:hover {
-    background-color: #ffeba7;
-    color: #102770;
+    opacity: 0.6;
 }
 
 .modal-btn:checked+label .uil,
@@ -710,7 +709,7 @@ footer {
     border-radius: 4px;
     overflow: hidden;
     padding-bottom: 20px;
-    /* background-color: #fff; */
+    background-color: #fff;
     -ms-flex-item-align: center;
     align-self: center;
     box-shadow: 0 12px 25px 0 rgba(199, 175, 189, .25);
