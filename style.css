@@ -611,6 +611,22 @@ footer {
     color: #1f2029;
 }
 
+.content .section full-height .modal5 .modal-wrap5 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1f2029;
+}
+
+.content .section full-height .modal6 .modal-wrap6 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1f2029;
+}
+
 .wolk {
     position: relative;
     width: 100%;
@@ -781,6 +797,80 @@ footer {
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
 }
 
+.modal-btn5:checked+label,
+.modal-btn5:not(:checked)+label {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    width: 265px;
+    min-width: 265px;
+    height: 265px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-image: url(./img5.jpg);
+    background-size: 100%;
+    /* background-color: #102770;
+    color: #ffeba7; */
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
+}
+
+.modal-btn6:checked+label,
+.modal-btn6:not(:checked)+label {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    width: 265px;
+    min-width: 265px;
+    height: 265px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-image: url(./img6.jpg);
+    background-size: 100%;
+    /* background-color: #102770;
+    color: #ffeba7; */
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
+}
+
 .modal-btn:not(:checked)+label:hover {
     opacity: 0.7;
 }
@@ -794,6 +884,14 @@ footer {
 }
 
 .modal-btn4:not(:checked)+label:hover {
+    opacity: 0.7;
+}
+
+.modal-btn5:not(:checked)+label:hover {
+    opacity: 0.7;
+}
+
+.modal-btn6:not(:checked)+label:hover {
     opacity: 0.7;
 }
 
@@ -817,6 +915,18 @@ footer {
 
 .modal-btn4:checked+label .uil,
 .modal-btn4:not(:checked)+label .uil {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.modal-btn5:checked+label .uil,
+.modal-btn5:not(:checked)+label .uil {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.modal-btn6:checked+label .uil,
+.modal-btn6:not(:checked)+label .uil {
     margin-left: 10px;
     font-size: 18px;
 }
@@ -921,6 +1031,56 @@ footer {
     transform: translateY(20px);
 }
 
+.modal-btn5:checked+label:after,
+.modal-btn5:not(:checked)+label:after {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 110;
+    width: 40px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #ffeba7;
+    color: #102770;
+    font-family: 'unicons';
+    /* content: '\eac6'; */
+    content: "×";
+    box-shadow: 0 12px 25px 0 rgba(16, 39, 112, .25);
+    transition: all 200ms linear;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
+.modal-btn6:checked+label:after,
+.modal-btn6:not(:checked)+label:after {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 110;
+    width: 40px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #ffeba7;
+    color: #102770;
+    font-family: 'unicons';
+    /* content: '\eac6'; */
+    content: "×";
+    box-shadow: 0 12px 25px 0 rgba(16, 39, 112, .25);
+    transition: all 200ms linear;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
 .modal-btn:checked+label:hover:after,
 .modal-btn:not(:checked)+label:hover:after {
     background-color: #102770;
@@ -941,6 +1101,18 @@ footer {
 
 .modal-btn4:checked+label:hover:after,
 .modal-btn4:not(:checked)+label:hover:after {
+    background-color: #102770;
+    color: #ffeba7;
+}
+
+.modal-btn5:checked+label:hover:after,
+.modal-btn5:not(:checked)+label:hover:after {
+    background-color: #102770;
+    color: #ffeba7;
+}
+
+.modal-btn6:checked+label:hover:after,
+.modal-btn6:not(:checked)+label:hover:after {
     background-color: #102770;
     color: #ffeba7;
 }
@@ -967,6 +1139,20 @@ footer {
 }
 
 .modal-btn4:checked+label:after {
+    transition: opacity 300ms 300ms ease, transform 300ms 300ms ease, background-color 250ms linear, color 250ms linear;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.modal-btn5:checked+label:after {
+    transition: opacity 300ms 300ms ease, transform 300ms 300ms ease, background-color 250ms linear, color 250ms linear;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.modal-btn6:checked+label:after {
     transition: opacity 300ms 300ms ease, transform 300ms 300ms ease, background-color 250ms linear, color 250ms linear;
     opacity: 1;
     pointer-events: auto;
@@ -1061,6 +1247,50 @@ footer {
     transition: opacity 250ms 700ms ease;
 }
 
+.modal5 {
+    position: fixed;
+    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow-x: hidden;
+    background-color: rgba(31, 32, 41, .75);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms 700ms ease;
+}
+
+.modal6 {
+    position: fixed;
+    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow-x: hidden;
+    background-color: rgba(31, 32, 41, .75);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms 700ms ease;
+}
+
 .modal-btn:checked~.modal {
     pointer-events: auto;
     opacity: 1;
@@ -1085,11 +1315,23 @@ footer {
     transition: all 300ms ease-in-out;
 }
 
+.modal-btn5:checked~.modal5 {
+    pointer-events: auto;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.modal-btn6:checked~.modal6 {
+    pointer-events: auto;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
 .modal-wrap {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1109,7 +1351,7 @@ footer {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1129,7 +1371,7 @@ footer {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1149,7 +1391,47 @@ footer {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: #fff;
+    -ms-flex-item-align: center;
+    align-self: center;
+    box-shadow: 0 12px 25px 0 rgba(199, 175, 189, .25);
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+}
+
+.modal-wrap5 {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: #fff;
+    -ms-flex-item-align: center;
+    align-self: center;
+    box-shadow: 0 12px 25px 0 rgba(199, 175, 189, .25);
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+}
+
+.modal-wrap6 {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1189,6 +1471,18 @@ footer {
     height: auto;
 }
 
+.modal-wrap5 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.modal-wrap6 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .modal-wrap p {
     padding: 20px 30px 0 30px;
 }
@@ -1202,6 +1496,14 @@ footer {
 }
 
 .modal-wrap4 p {
+    padding: 20px 30px 0 30px;
+}
+
+.modal-wrap5 p {
+    padding: 20px 30px 0 30px;
+}
+
+.modal-wrap6 p {
     padding: 20px 30px 0 30px;
 }
 
@@ -1224,6 +1526,18 @@ footer {
 }
 
 .modal-btn4:checked~.modal4 .modal-wrap4 {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+}
+
+.modal-btn5:checked~.modal5 .modal-wrap5 {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+}
+
+.modal-btn6:checked~.modal6 .modal-wrap6 {
     opacity: 1;
     transform: scale(1);
     transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
@@ -1270,6 +1584,14 @@ footer {
         width: calc(100% - 40px);
         padding-bottom: 15px;
     }
+    .modal-wrap5 {
+        width: calc(100% - 40px);
+        padding-bottom: 15px;
+    }
+    .modal-wrap6 {
+        width: calc(100% - 40px);
+        padding-bottom: 15px;
+    }
     .modal-wrap p {
         padding: 15px 20px 0 20px;
     }
@@ -1280,6 +1602,12 @@ footer {
         padding: 15px 20px 0 20px;
     }
     .modal-wrap4 p {
+        padding: 15px 20px 0 20px;
+    }
+    .modal-wrap5 p {
+        padding: 15px 20px 0 20px;
+    }
+    .modal-wrap6 p {
         padding: 15px 20px 0 20px;
     }
 }
