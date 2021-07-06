@@ -45,7 +45,7 @@ p {
     height: 100%;
     padding: 40px;
     transition: 1s;
-    z-index: 100;
+    z-index: 90;
 }
 
 .sidbar ul {
@@ -78,14 +78,15 @@ p {
 }
 
 .toggle {
-    position: relative;
-    right: 0;
+    position: fixed;
+    right: 40px;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 100;
     transition: 0.5s;
 }
 
@@ -94,7 +95,7 @@ p {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #777;
+    background: rgb(161, 160, 160);
     transform: translateY(-6px);
     transition: 0.5s;
 }
@@ -104,7 +105,7 @@ p {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #777;
+    background: rgb(161, 160, 160);
     transform: translateY(6px);
     transition: 0.5s;
 }
@@ -399,7 +400,7 @@ footer {
     transition: 0.5s;
 }
 
-.work .content .workBx .work:hover .textBx {
+.work .content .workBx .wolk:hover .textBx {
     opacity: 1 !important;
 }
 
@@ -565,7 +566,7 @@ footer {
     color: #1f2029;
 }
 
-.work {
+.wolk {
     position: relative;
     width: 100%;
     display: block;
