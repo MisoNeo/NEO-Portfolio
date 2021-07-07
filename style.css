@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 * {
     margin: 0;
     padding: 0;
@@ -1954,4 +1955,77 @@ footer {
     .modal-wrap8 p {
         padding: 15px 20px 0 20px;
     }
+}
+
+.last {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    width: 100%;
+}
+
+.exit {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 22%;
+}
+
+.last .exit p {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 90px;
+}
+
+.word {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+    color: #8e44ad;
+}
+
+.belize {
+    color: #2980b9;
+}
+
+.pomegranate {
+    color: #c0392b;
+}
+
+.green {
+    color: #16a085;
+}
+
+.midnight {
+    color: #2c3e50;
 }
