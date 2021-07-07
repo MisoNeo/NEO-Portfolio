@@ -511,7 +511,6 @@ footer {
 .slider {
     position: relative;
     margin: auto;
-    bottom: 0;
     width: 150vh;
     padding: 0%;
     justify-content: center;
